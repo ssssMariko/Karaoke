@@ -1,0 +1,87 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:2:1-37:12
+	package
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:3:5-44
+		INJECTED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml
+		INJECTED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:5:22-76
+uses-permission#android.permission.REORDER_TASKS
+ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:6:5-72
+	android:name
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:6:22-69
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:7:5-78
+	android:name
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:7:22-75
+application
+ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:9:5-35:19
+activity#com.tencent.liteav.tuikaraoke.ui.room.KaraokeRoomAnchorActivity
+ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:10:9-15:59
+	android:screenOrientation
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:14:13-49
+	android:launchMode
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:13:13-44
+	android:configChanges
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:12:13-63
+	android:theme
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:15:13-56
+	android:name
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:11:13-62
+activity#com.tencent.liteav.tuikaraoke.ui.room.KaraokeRoomAudienceActivity
+ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:16:9-21:59
+	android:screenOrientation
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:20:13-49
+	android:launchMode
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:19:13-44
+	android:configChanges
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:18:13-63
+	android:theme
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:21:13-56
+	android:name
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:17:13-64
+activity#com.tencent.liteav.tuikaraoke.ui.floatwindow.FloatActivity
+ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:22:9-27:75
+	android:launchMode
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:25:13-42
+	android:windowSoftInputMode
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:27:13-72
+	android:configChanges
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:24:13-74
+	android:theme
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:26:13-56
+	android:name
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:23:13-57
+activity#com.tencent.liteav.tuikaraoke.ui.music.impl.KaraokeSearchMusicActivity
+ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:29:9-34:59
+	android:screenOrientation
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:33:13-49
+	android:launchMode
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:32:13-44
+	android:configChanges
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:31:13-63
+	android:theme
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:34:13-56
+	android:name
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:30:13-69
+uses-sdk
+INJECTED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml
+INJECTED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml
+INJECTED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml
+INJECTED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml
+		INJECTED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml
+		ADDED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml
+		INJECTED from /Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml

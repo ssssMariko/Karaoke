@@ -1,0 +1,73 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tencent.liteav.tuikaraoke" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="23"
+6-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="32" />
+7-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+9-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:5:5-79
+9-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:5:22-76
+10    <uses-permission android:name="android.permission.REORDER_TASKS" />
+10-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:6:5-72
+10-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:6:22-69
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:7:5-78
+11-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:7:22-75
+12
+13    <application>
+13-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:9:5-35:19
+14        <activity
+14-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:10:9-15:59
+15            android:name="com.tencent.liteav.tuikaraoke.ui.room.KaraokeRoomAnchorActivity"
+15-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:11:13-62
+16            android:configChanges="orientation|keyboardHidden"
+16-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:12:13-63
+17            android:launchMode="singleTask"
+17-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:13:13-44
+18            android:screenOrientation="portrait"
+18-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:14:13-49
+19            android:theme="@style/TRTCKtvRoomChatTheme" />
+19-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:15:13-56
+20        <activity
+20-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:16:9-21:59
+21            android:name="com.tencent.liteav.tuikaraoke.ui.room.KaraokeRoomAudienceActivity"
+21-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:17:13-64
+22            android:configChanges="orientation|keyboardHidden"
+22-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:18:13-63
+23            android:launchMode="singleTask"
+23-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:19:13-44
+24            android:screenOrientation="portrait"
+24-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:20:13-49
+25            android:theme="@style/TRTCKtvRoomChatTheme" />
+25-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:21:13-56
+26        <activity
+26-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:22:9-27:75
+27            android:name="com.tencent.liteav.tuikaraoke.ui.floatwindow.FloatActivity"
+27-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:23:13-57
+28            android:configChanges="keyboardHidden|orientation|screenSize"
+28-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:24:13-74
+29            android:launchMode="standard"
+29-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:25:13-42
+30            android:theme="@style/TRTCKtvRoomChatTheme"
+30-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:26:13-56
+31            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+31-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:27:13-72
+32        <activity
+32-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:29:9-34:59
+33            android:name="com.tencent.liteav.tuikaraoke.ui.music.impl.KaraokeSearchMusicActivity"
+33-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:30:13-69
+34            android:configChanges="orientation|keyboardHidden"
+34-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:31:13-63
+35            android:launchMode="singleTask"
+35-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:32:13-44
+36            android:screenOrientation="portrait"
+36-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:33:13-49
+37            android:theme="@style/TRTCKtvRoomChatTheme" />
+37-->/Users/mariko/workpace/Android/Projects/Karaoke/tuikaraoke/src/main/AndroidManifest.xml:34:13-56
+38    </application>
+39
+40</manifest>
