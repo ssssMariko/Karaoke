@@ -38,6 +38,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         initView()
         initData()
+        // 添加本地的音频资源
+        LocalDataHelp.initLocalData(this)
     }
 
 
