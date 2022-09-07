@@ -121,22 +121,22 @@ public class AudioEffectPanel extends BottomSheetDialog {
     @Override
     protected void onStart() {
         super.onStart();
-        getBottomSheetBehavior();
+       // getBottomSheetBehavior();
         mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
     }
 
-    private BottomSheetBehavior getBottomSheetBehavior() {
-        if (mBottomSheetBehavior != null) {
-            return mBottomSheetBehavior;
-        }
-
-        View view = getWindow().findViewById(R.id.design_bottom_sheet);
-        if (view == null) {
-            return null;
-        }
-        mBottomSheetBehavior = BottomSheetBehavior.from(view);
-        return mBottomSheetBehavior;
-    }
+//    private BottomSheetBehavior getBottomSheetBehavior() {
+//        if (mBottomSheetBehavior != null) {
+//            return mBottomSheetBehavior;
+//        }
+//
+//        View view = getWindow().findViewById(R.id.design_bottom_sheet);
+//        if (view == null) {
+//            return null;
+//        }
+//        mBottomSheetBehavior = BottomSheetBehavior.from(view);
+//        return mBottomSheetBehavior;
+//    }
 
     public void hideManagerView() {
         mMusicVolumeGroup.setVisibility(GONE);
@@ -168,8 +168,8 @@ public class AudioEffectPanel extends BottomSheetDialog {
         if (mMusicType != null) {
             updateView();
         }
-        BottomSheetBehavior behavior = BottomSheetBehavior.from(findViewById(R.id.design_bottom_sheet));
-        behavior.setHideable(false);
+//        BottomSheetBehavior behavior = BottomSheetBehavior.from(findViewById(R.id.design_bottom_sheet));
+//        behavior.setHideable(false);
     }
 
     private void updateView() {
