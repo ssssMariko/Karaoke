@@ -1,5 +1,6 @@
 package com.tencent.liteav.tuikaraoke.ui.room;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -72,7 +73,7 @@ import java.util.Map;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class KaraokeRoomBaseActivity extends AppCompatActivity implements KaraokeRoomSeatAdapter.OnItemClickListener,
+public class KaraokeRoomBaseActivity extends Activity implements KaraokeRoomSeatAdapter.OnItemClickListener,
         TRTCKaraokeRoomDelegate,
         InputTextMsgDialog.OnTextSendListener,
         MsgListAdapter.OnItemClickListener,
@@ -155,7 +156,7 @@ public class KaraokeRoomBaseActivity extends AppCompatActivity implements Karaok
     private String                mRoomDefaultCover =
             "https://liteav-test-1252463788.cos.ap-guangzhou.myqcloud.com/voice_room/voice_room_cover1.png";
     private boolean               mIsDestroyed;
-    private String                mPakcageName      = "com.tencent.liteav.demo.karaokeimpl.KaraokeMusicServiceImpl";
+    private String                mPakcageName      = "com.mariko.karaoke.karaokeimpl.KaraokeMusicServiceImpl";
     public  RoomInfoController    mRoomInfoController;
 
     @Override
@@ -165,6 +166,7 @@ public class KaraokeRoomBaseActivity extends AppCompatActivity implements Karaok
         UserModelManager.getInstance().getUserModel().userType = UserModel.UserType.KARAOKE;
         // 应用运行时，保持不锁屏、全屏化
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        //supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.trtckaraoke_activity_main);
         initStatusBar();
