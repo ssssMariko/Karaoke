@@ -8,6 +8,9 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18796296296296297" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.23489583333333333" />
         <entry key="tuikaraoke/src/main/res/layout/trtckaraoke_activity_main.xml" value="0.2222222222222222" />
+        <entry key="tuikaraoke/src/main/res/layout/trtckaraoke_dialog_gift_panel.xml" value="0.15534420289855072" />
+        <entry key="tuikaraoke/src/main/res/layout/trtckaraoke_layout_gift_panel_container.xml" value="0.15534420289855072" />
+        <entry key="tuikaraoke/src/main/res/layout/trtckaraoke_layout_lottie_animator.xml" value="0.23385416666666667" />
       </map>
     </option>
   </component>

@@ -26,6 +26,7 @@ import com.tencent.liteav.tuikaraoke.ui.gift.imp.adapter.GiftViewPagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.tencent.liteav.tuikaraoke.ui.gift.Constant.GIFT_PANEL_TYPE_MULTIROW;
 import static com.tencent.liteav.tuikaraoke.ui.gift.Constant.GIFT_PANEL_TYPE_SINGLEROW;
 
 public class GiftPanelViewImp extends BottomSheetDialog implements IGiftPanelView {
@@ -42,7 +43,7 @@ public class GiftPanelViewImp extends BottomSheetDialog implements IGiftPanelVie
     private ViewPager           mViewpager;
     private GiftPanelDelegate   mGiftPanelDelegate;
     private GiftInfoDataHandler mGiftInfoDataHandler;
-    private String              mDefalutPanelType = GIFT_PANEL_TYPE_SINGLEROW;
+    private String              mDefalutPanelType = GIFT_PANEL_TYPE_MULTIROW;
 
     public GiftPanelViewImp(Context context) {
         super(context, R.style.TRTCKTVRoomDialogTheme);
