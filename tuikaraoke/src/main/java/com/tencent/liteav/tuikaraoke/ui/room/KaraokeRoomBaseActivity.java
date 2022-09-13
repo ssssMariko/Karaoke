@@ -174,11 +174,11 @@ public class KaraokeRoomBaseActivity extends Activity implements KaraokeRoomSeat
         initView();
         initData();
         initListener();
-        MsgEntity msgEntity = new MsgEntity();
-        msgEntity.type = MsgEntity.TYPE_WELCOME;
-        msgEntity.content = getString(R.string.trtckaraoke_welcome_visit);
-        msgEntity.linkUrl = getString(R.string.trtckaraoke_welcome_visit_link);
-        showImMsg(msgEntity);
+//        MsgEntity msgEntity = new MsgEntity();
+//        msgEntity.type = MsgEntity.TYPE_WELCOME;
+//        msgEntity.content = getString(R.string.trtckaraoke_welcome_visit);
+//        msgEntity.linkUrl = getString(R.string.trtckaraoke_welcome_visit_link);
+//        showImMsg(msgEntity);
     }
 
     // 通过反射创建歌曲管理实现类的实例
