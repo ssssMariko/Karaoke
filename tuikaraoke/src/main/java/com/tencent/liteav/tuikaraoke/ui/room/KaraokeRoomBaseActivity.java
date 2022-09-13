@@ -1,5 +1,6 @@
 package com.tencent.liteav.tuikaraoke.ui.room;
 
+import android.animation.Animator;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -24,6 +25,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.blankj.utilcode.util.ToastUtils;
 import com.google.gson.Gson;
 import com.tencent.liteav.basic.ImageLoader;
@@ -149,6 +151,7 @@ public class KaraokeRoomBaseActivity extends Activity implements KaraokeRoomSeat
     //礼物
     private GiftInfoDataHandler mGiftInfoDataHandler;
     private GiftAnimatorLayout  mGiftAnimatorLayout;
+    private LottieAnimationView mLottieAnimationView;
 
     private ConfirmDialogFragment mAlertDialog;
     private LyricsView            mLrcView;
@@ -158,7 +161,6 @@ public class KaraokeRoomBaseActivity extends Activity implements KaraokeRoomSeat
     private boolean               mIsDestroyed;
     private String                mPakcageName      = "com.mariko.karaoke.karaokeimpl.KaraokeMusicServiceImpl";
     public  RoomInfoController    mRoomInfoController;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -267,6 +269,29 @@ public class KaraokeRoomBaseActivity extends Activity implements KaraokeRoomSeat
 
         //歌词显示控件
         mLrcView = findViewById(R.id.lrc_view);
+
+        mLottieAnimationView  = findViewById(R.id.lt_gift);
+        mLottieAnimationView.addAnimatorListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animation) {
+                mLottieAnimationView.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                mLottieAnimationView.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animation) {
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animator animation) {
+
+            }
+        });
     }
 
     public void ktvMusicImplComplete() {
@@ -412,6 +437,12 @@ public class KaraokeRoomBaseActivity extends Activity implements KaraokeRoomSeat
             @Override
             public void onGiftItemClick(GiftInfo giftInfo) {
                 sendGift(giftInfo);
+                //播放动画
+                if (!giftInfo.lottieUrl.isEmpty()){
+                    mLottieAnimationView.setVisibility(View.VISIBLE);
+                    mLottieAnimationView.setAnimationFromUrl(giftInfo.lottieUrl);
+                    mLottieAnimationView.playAnimation();
+                }
             }
 
             @Override

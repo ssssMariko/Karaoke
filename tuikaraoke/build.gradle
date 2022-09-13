@@ -37,4 +37,5 @@ dependencies {
     api rootProject.ext.imSdk
     api 'com.tencent.liteav.tuikit:tuicore:latest.release'
     api project(':debug')
+    api 'com.airbnb.android:lottie:5.2.0'
 }
