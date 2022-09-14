@@ -82,15 +82,15 @@ public class KaraokeRoomBaseActivity extends Activity implements KaraokeRoomSeat
         IUpdateLrcDelegate {
     protected static final String TAG = "KaraokeRoomBaseActivity";
 
-    protected static final int    MAX_SEAT_SIZE         = 8;
-    protected static final String KTVROOM_ROOM_ID       = "room_id";
-    protected static final String KTVROOM_ROOM_NAME     = "room_name";
-    protected static final String KTVROOM_USER_NAME     = "user_name";
-    protected static final String KTVROOM_USER_ID       = "user_id";
-    protected static final String KTVROOM_NEED_REQUEST  = "need_request";
+    protected static final int MAX_SEAT_SIZE = 8;
+    protected static final String KTVROOM_ROOM_ID = "room_id";
+    protected static final String KTVROOM_ROOM_NAME = "room_name";
+    protected static final String KTVROOM_USER_NAME = "user_name";
+    protected static final String KTVROOM_USER_ID = "user_id";
+    protected static final String KTVROOM_NEED_REQUEST = "need_request";
     protected static final String KTVROOM_AUDIO_QUALITY = "audio_quality";
-    protected static final String KTVROOM_USER_AVATAR   = "user_avatar";
-    protected static final String KTVROOM_ROOM_COVER    = "room_cover";
+    protected static final String KTVROOM_USER_AVATAR = "user_avatar";
+    protected static final String KTVROOM_ROOM_COVER = "room_cover";
 
     private static final int[] MESSAGE_USERNAME_COLOR_ARR = {
             R.color.trtckaraoke_color_msg_1,
@@ -102,65 +102,66 @@ public class KaraokeRoomBaseActivity extends Activity implements KaraokeRoomSeat
             R.color.trtckaraoke_color_msg_7,
     };
 
-    protected String                      mSelfUserId;     //进房用户ID
-    protected int                         mCurrentRole;    //用户当前角色:主播/听众
-    public    TRTCKaraokeRoom             mTRTCKaraokeRoom;
-    private   boolean                     isInitSeat;
+    protected String mSelfUserId;     //进房用户ID
+    protected int mCurrentRole;    //用户当前角色:主播/听众
+    public TRTCKaraokeRoom mTRTCKaraokeRoom;
+    private boolean isInitSeat;
     protected List<KaraokeRoomSeatEntity> mKaraokeRoomSeatEntityList;
-    protected Map<String, Boolean>        mSeatUserMuteMap;
-    protected KaraokeRoomSeatAdapter      mKaraokeRoomSeatAdapter;
-    protected AudienceListAdapter         mAudienceListAdapter;
-    protected TextView                    mTvRoomName;
-    protected TextView                    mTvRoomId;
-    protected RecyclerView                mRvSeat;
-    protected RecyclerView                mRvAudience;
-    protected RecyclerView                mRvImMsg;
-    protected KaraokeMusicView            mKTVMusicView;
-    protected AppCompatImageButton        mBtnExitRoom;
-    protected AppCompatImageButton        mBtnMsg;
-    protected AppCompatImageButton        mBtnMic;
-    protected AppCompatImageButton        mBtnGift;
-    protected AppCompatImageButton        mBtnReport;
-    protected ImageView                   mIvAudienceMove;
-    protected View                        mProgressBar;
+    protected Map<String, Boolean> mSeatUserMuteMap;
+    protected KaraokeRoomSeatAdapter mKaraokeRoomSeatAdapter;
+    protected AudienceListAdapter mAudienceListAdapter;
+    protected TextView mTvRoomName;
+    protected TextView mTvRoomId;
+    protected RecyclerView mRvSeat;
+    protected RecyclerView mRvAudience;
+    protected RecyclerView mRvImMsg;
+    protected KaraokeMusicView mKTVMusicView;
+    protected AppCompatImageButton mBtnExitRoom;
+    protected AppCompatImageButton mBtnMsg;
+    protected AppCompatImageButton mBtnMic;
+    protected AppCompatImageButton mBtnGift;
+    protected AppCompatImageButton mBtnReport;
+    protected ImageView mIvAudienceMove;
+    protected View mProgressBar;
 
-    protected TUIKaraokeAudioManager     mTUIKaraokeAudioManager;
-    protected InputTextMsgDialog         mInputTextMsgDialog;
-    protected int                        mRoomId;
-    protected String                     mRoomName;
-    protected String                     mUserName;
-    protected String                     mRoomCover;
-    protected String                     mUserAvatar;
-    protected CircleImageView            mImgRoom;
-    protected boolean                    mNeedRequest;
-    protected int                        mAudioQuality;
-    protected List<MsgEntity>            mMsgEntityList;
+    protected TUIKaraokeAudioManager mTUIKaraokeAudioManager;
+    protected InputTextMsgDialog mInputTextMsgDialog;
+    protected int mRoomId;
+    protected String mRoomName;
+    protected String mUserName;
+    protected String mRoomCover;
+    protected String mUserAvatar;
+    protected CircleImageView mImgRoom;
+    protected boolean mNeedRequest;
+    protected int mAudioQuality;
+    protected List<MsgEntity> mMsgEntityList;
     protected LinkedList<AudienceEntity> mAudienceEntityList;
-    protected MsgListAdapter             mMsgListAdapter;
-    protected ConfirmDialogFragment      mConfirmDialogFragment;
-    protected List<MemberEntity>         mMemberEntityList;
-    protected Map<String, MemberEntity>  mMemberEntityMap;
+    protected MsgListAdapter mMsgListAdapter;
+    protected ConfirmDialogFragment mConfirmDialogFragment;
+    protected List<MemberEntity> mMemberEntityList;
+    protected Map<String, MemberEntity> mMemberEntityMap;
 
     private Context mContext;
-    private String  mLastMsgUserId = null;
-    private int     mMessageColorIndex;
-    private int     mRvAudienceScrollPosition;
-    private int     mSelfSeatIndex = -1;
-    private long    lastClickTime  = -1;
+    private String mLastMsgUserId = null;
+    private int mMessageColorIndex;
+    private int mRvAudienceScrollPosition;
+    private int mSelfSeatIndex = -1;
+    private long lastClickTime = -1;
 
     //礼物
     private GiftInfoDataHandler mGiftInfoDataHandler;
-    private GiftAnimatorLayout  mGiftAnimatorLayout;
+    private GiftAnimatorLayout mGiftAnimatorLayout;
     private LottieAnimationView mLottieAnimationView;
 
     private ConfirmDialogFragment mAlertDialog;
-    private LyricsView            mLrcView;
-    public  KaraokeMusicService   mKaraokeMusicService;
-    private String                mRoomDefaultCover =
+    private LyricsView mLrcView;
+    public KaraokeMusicService mKaraokeMusicService;
+    private String mRoomDefaultCover =
             "https://liteav-test-1252463788.cos.ap-guangzhou.myqcloud.com/voice_room/voice_room_cover1.png";
-    private boolean               mIsDestroyed;
-    private String                mPakcageName      = "com.mariko.karaoke.karaokeimpl.KaraokeMusicServiceImpl";
-    public  RoomInfoController    mRoomInfoController;
+    private boolean mIsDestroyed;
+    private String mPakcageName = "com.mariko.karaoke.karaokeimpl.KaraokeMusicServiceImpl";
+    public RoomInfoController mRoomInfoController;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -270,7 +271,7 @@ public class KaraokeRoomBaseActivity extends Activity implements KaraokeRoomSeat
         //歌词显示控件
         mLrcView = findViewById(R.id.lrc_view);
 
-        mLottieAnimationView  = findViewById(R.id.lt_gift);
+        mLottieAnimationView = findViewById(R.id.lt_gift);
         mLottieAnimationView.addAnimatorListener(new Animator.AnimatorListener() {
             @Override
             public void onAnimationStart(Animator animation) {
@@ -429,6 +430,13 @@ public class KaraokeRoomBaseActivity extends Activity implements KaraokeRoomSeat
         return hasPermission;
     }
 
+    //展示礼物动画
+    private void showGiftLottieAnimation(String lottieUrl) {
+        mLottieAnimationView.setVisibility(View.VISIBLE);
+        mLottieAnimationView.setAnimationFromUrl(lottieUrl);
+        mLottieAnimationView.playAnimation();
+    }
+
     //展示礼物面板
     private void showGiftPanel() {
         IGiftPanelView giftPanelView = new GiftPanelViewImp(this);
@@ -438,10 +446,8 @@ public class KaraokeRoomBaseActivity extends Activity implements KaraokeRoomSeat
             public void onGiftItemClick(GiftInfo giftInfo) {
                 sendGift(giftInfo);
                 //播放动画
-                if (!giftInfo.lottieUrl.isEmpty()){
-                    mLottieAnimationView.setVisibility(View.VISIBLE);
-                    mLottieAnimationView.setAnimationFromUrl(giftInfo.lottieUrl);
-                    mLottieAnimationView.playAnimation();
+                if (!giftInfo.lottieUrl.isEmpty()) {
+                    showGiftLottieAnimation(giftInfo.lottieUrl);
                 }
             }
 
@@ -497,6 +503,10 @@ public class KaraokeRoomBaseActivity extends Activity implements KaraokeRoomSeat
                     }
                 }
                 mGiftAnimatorLayout.show(giftInfo);
+                //播放动画
+                if (!giftInfo.lottieUrl.isEmpty()) {
+                    showGiftLottieAnimation(giftInfo.lottieUrl);
+                }
             }
         }
     }
@@ -1110,7 +1120,7 @@ public class KaraokeRoomBaseActivity extends Activity implements KaraokeRoomSeat
     }
 
     class LrcAsyncTask extends AsyncTask {
-        private String       mPath;
+        private String mPath;
         private LyricsReader mLyricsReader;
 
         public LrcAsyncTask(String path, LyricsReader lyricsReader) {

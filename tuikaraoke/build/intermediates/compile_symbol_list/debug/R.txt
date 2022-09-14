@@ -185,6 +185,7 @@ int id ll_portrait 0x0
 int id ll_search_music 0x0
 int id ll_song_info 0x0
 int id lrc_view 0x0
+int id lt_gift 0x0
 int id music_effect 0x0
 int id progress_bar 0x0
 int id progress_bar_choose_song 0x0

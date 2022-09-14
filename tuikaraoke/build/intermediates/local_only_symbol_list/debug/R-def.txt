@@ -187,6 +187,7 @@ id ll_portrait
 id ll_search_music
 id ll_song_info
 id lrc_view
+id lt_gift
 id music_effect
 id progress_bar
 id progress_bar_choose_song
