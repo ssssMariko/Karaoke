@@ -122,7 +122,7 @@ public class AudioEffectPanel extends BottomSheetDialog {
     protected void onStart() {
         super.onStart();
        // getBottomSheetBehavior();
-        mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+       // mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
     }
 
 //    private BottomSheetBehavior getBottomSheetBehavior() {
